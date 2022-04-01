@@ -62,6 +62,8 @@ public class changeArray {
         }
         System.out.println(list);
 
+        System.out.println("Merhaba cosmos");
+
 
     }
 }
