@@ -36,16 +36,19 @@ public class CamelCase {
      */
     public static void main(String[] args) {
 
-        String str = "I lIVe in uSa";
+         String str = "I lIVe in uSa";
+         camelCaseM(str);
+    }
+    private static String camelCaseM(String str) {
         StringBuilder newStr = new StringBuilder();
         String[] arr = str.split(" ");
         for (String each : arr) {
             String s1 = each.substring(0, 1).toUpperCase(Locale.forLanguageTag("en"));
             String s2 = s1 + each.substring(1).toLowerCase(Locale.forLanguageTag("en"));
             newStr.append(s2).append(' ');
-            
         }
-        System.out.println(newStr.toString());
-    }
+        System.out.println(newStr);
+        return str;
+    }    
 }
 
